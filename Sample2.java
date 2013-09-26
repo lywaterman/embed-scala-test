@@ -14,6 +14,8 @@ public class Sample2 {
 
     	java.lang.Object value = eval.apply(eval.toSource(new File("game_func.scala")), false);
 
+    	eval.apply(eval.toSource(new File("game_func.scala")), false);
+
 		System.out.println(value.getClass().getName());
 
 		return "Hello, " + name + "!";
