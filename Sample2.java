@@ -9,7 +9,7 @@ public class Sample2 {
 
 	public static String sayHello(String name) {
     	Eval eval = new Eval();
-
+		
 		eval.compile(eval.toSource(new File("game_data.scala")));
 
     	java.lang.Object value = eval.apply(eval.toSource(new File("game_func.scala")), false);
